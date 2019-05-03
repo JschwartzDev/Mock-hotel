@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: repeat(10, minmax(1fr,5fr));
+}
+
+.wrapper > * {
+  padding-bottom: 2vw;
+}
+
+
+#main-header {
+  grid-column: 5/21;
+  grid-row: 1/5;
+
+  background-color: #A62121;
+  padding: 1em;
+  border: 3px solid #27668C;
+  margin-left: -.2vw;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+#header-header {
+  font-size: 5em;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
+#logo-box {
+  grid-column: 1/5;
+  grid-row:1/5;
+
+  background-color: cyan;
+  border-left: 3px solid #27668C;
+  border-top: 3px solid #27668C;
+  border-bottom: 3px solid #27668C;
+  width: 19.5vw;
+  padding:0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#logo-img {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  margin: auto;
+  width: 19.5vw;
+  height: 11vw;
+
+}
+
+#listings-wrapper {
+  grid-column: 5/21;
+  grid-row:5/21;
+
+  background-color: #F2B988;
+
+  display: grid;
+  grid-template-columns: repeat(10, .5fr);
+  grid-template-rows: repeat(10, minmax(1fr, auto));
+}
+
+#listings-inputs {
+  grid-column: 4/7;
+  grid-row: 1/2;
+
+  position: relative;
+  left: 11%;
+  top: 20%;
+}
+
+#listings-container {
+  grid-column: 2/10;
+  grid-row: 2/10;
+
+  background-color: #5AADBF;
+  border: 3px solid #27668C;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 5vw;
+}
+
+
+
+#side-bar {
+  grid-column:1/5;
+  grid-row: 5/21;
+  color: white;
+  background-color: #A62121;
+  padding: 1em;
+  border-left: 3px solid #27668C;
+  border-bottom: 3px solid #27668C;
+  border-right: 3px solid #27668C;
+}
+
+#side-bar h3 {
+  font-size: 1.5em;
+  text-indent: 20px;
+  text-shadow: 3px 3px black;
+}
+
+#side-bar a:link {
+  color: #5AADBF;
+  text-decoration: none;
+  text-shadow: 1.5px 1px black;
+}
+
+#side-bar a:hover {
+  color:#A62121;
+}
+
+#side-bar a:visited {
+  color:orange;
+}
+
+#side-bar li {
+  padding: .5em;
+  background-color: #F2B988;
+  border-right: 3px solid #27668C;
+  border-top: 3px solid #27668C;
+  border-left: 3px solid #27668C;
+}
+
+#side-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+#side-bar li {
+  padding: 1em;
+}
