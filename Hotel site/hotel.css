@@ -117,12 +117,12 @@
   text-shadow: 1.5px 1px black;
 }
 
-#side-bar a:hover {
-  color:#A62121;
-}
-
 #side-bar a:visited {
   color:orange;
+}
+
+#side-bar a:hover {
+  color:#A62121;
 }
 
 #side-bar li {
