@@ -66,6 +66,8 @@
   display: grid;
   grid-template-columns: repeat(10, .5fr);
   grid-template-rows: repeat(10, minmax(1fr, auto));
+  border-right: 3px solid #27668C;
+  border-bottom: 3px solid #27668C;
 }
 
 #listings-inputs {
